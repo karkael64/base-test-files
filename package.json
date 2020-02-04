@@ -1,6 +1,6 @@
 {
   "name": "base-test-files",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Load tests files and their dependencies for executing them with unit tests functions",
   "keywords": [
     "babel",
@@ -28,7 +28,7 @@
   "author": "\"Karkael Haunter\" <karkael@gmail.com>",
   "license": "Apache-2.0",
   "dependencies": {
-    "babel-unifyer": "^1.0.0"
+    "babel-unifyer": "^1.0.1"
   },
   "directories": {
     "test": "test"

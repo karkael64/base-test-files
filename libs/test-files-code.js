@@ -1,5 +1,5 @@
 const getTestFiles = require("./find-test-files")
-const { babelUnifyer, setTranslator } = require("babel-unifyer")
+const { unifyScript, setTranslator } = require("babel-unifyer")
 
 
 /**
@@ -17,7 +17,7 @@ async function getTestFilesCode (opts, dir = ".", match = "\\.test\\.js$") {
   const paths = await getTestFiles(dir, match)
   const list = {}
   await Promise.all(paths.map(async (path) => {
-    list[path] = await babelUnifyer(path, opts)
+    list[path] = await unifyScript(path, opts)
   }))
   return list
 }
