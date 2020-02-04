@@ -1,5 +1,5 @@
 {
-  "name": "test-files",
+  "name": "base-test-files",
   "version": "1.0.0",
   "description": "Load tests files and their dependencies for executing them with unit tests functions",
   "keywords": [
@@ -19,12 +19,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/karkael64/test-files.git"
+    "url": "git+https://github.com/karkael64/base-test-files.git"
   },
   "bugs": {
-    "url": "https://github.com/karkael64/test-files"
+    "url": "https://github.com/karkael64/base-test-files"
   },
-  "homepage": "https://github.com/karkael64/test-files#readme",
+  "homepage": "https://github.com/karkael64/base-test-files#readme",
   "author": "\"Karkael Haunter\" <karkael@gmail.com>",
   "license": "Apache-2.0",
   "dependencies": {

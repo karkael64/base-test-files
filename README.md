@@ -1,4 +1,4 @@
-# Test-Files
+# Base-Test-Files
 
 Helps to translate files with Babel.js and unify them in a single script file
 
@@ -11,13 +11,13 @@ Helps to translate files with Babel.js and unify them in a single script file
 
 ## Installation
 
-`npm install --save-dev test-files`
+`npm install --save-dev base-test-files`
 
 
 ## Simple usage
 
 ```js
-const runTests = require("test-files")
+const runTests = require("base-test-files")
 runTests()
 ```
 
@@ -28,7 +28,7 @@ runTests()
 Second parameter is the Babel.js configurator (below default configuration).
 
 ```js
-const runTests = require("test-files")
+const runTests = require("base-test-files")
 runTests({
   presets: ["@babel/env"],
   ast: true,
@@ -43,7 +43,7 @@ For more informations see [Babel-Unifyer](https://github.com/karkael64/babel-uni
 ### Edit test context
 
 ```js
-const runTests = require("test-files")
+const runTests = require("base-test-files")
 const {context} = runTests
 
 context.window = context
