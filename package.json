@@ -1,0 +1,40 @@
+{
+  "name": "test-files",
+  "version": "1.0.0",
+  "description": "Load tests files and their dependencies for executing them with unit tests functions",
+  "keywords": [
+    "babel",
+    "test",
+    "file",
+    "unit",
+    "compile",
+    "promisify"
+  ],
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "libs/",
+    "LICENSE",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karkael64/test-files.git"
+  },
+  "bugs": {
+    "url": "https://github.com/karkael64/test-files"
+  },
+  "homepage": "https://github.com/karkael64/test-files#readme",
+  "author": "\"Karkael Haunter\" <karkael@gmail.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "babel-unifyer": "^1.0.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "cd test && node run"
+  }
+}
