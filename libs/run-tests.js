@@ -21,11 +21,10 @@ async function runTests(opts, dir = "", match = "\\.test\\.js$") {
   try {
     await describe("Global", async function () {
       process.exitCode = 0
-      let file, code, ctx
       while (files.length) {
-        file = files.shift()
-        script = files_code[file]
-        ctx = vm.createContext(context)
+        const file = files.shift()
+        const script = new vm.Script(files_code[file])
+        const ctx = vm.createContext(context)
         try {
           await script.runInContext(ctx)
         } catch (err) {
